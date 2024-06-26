@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('public/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    border-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.profile-card {
+    position: absolute;
+    background: rgba(29, 28, 28, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    padding: 40px 20px 20px 40px; 
+    text-align: center;
+    color: #ffffff;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 1;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.works-card {
+    position: absolute;
+    background: rgba(29, 28, 28, 0.1);
+    border-radius: 30px;
+    margin-left: 250px;
+    backdrop-filter: blur(20px);
+    padding: 30px 15px 15px 30px; 
+    text-align: center;
+    color: #ffffff;
+    width: 300px; 
+    height: 370px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.white-bar {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 0.5px;
+    height: 100%;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0px 0;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.links {
+    margin: 15px 0;
+    border-radius: 20px;
+}
+
+.links a {
+    margin: 0 10px;
+}
+
+.links img {
+    width: 30px;
+    height: 30px;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.hidden {
+    transform: translateX(-150%);
+    opacity: 0;
+}
+
+.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.shift-left {
+    transform: translateX(-70%);
+    opacity: 1;
+}
